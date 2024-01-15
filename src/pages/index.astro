@@ -1,79 +1,48 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Nav from '../components/Nav.astro';
-import Carosuel from '../components/Carosuel.astro'
+import Nav from '../components/Nav.astro'
+import Marquee from '../components/Marquee.astro'
 ---
 
 <Layout title="gorkle design">
-	<main class="">
+	<section id="home" class="bg-background h-screen flex flex-col justify-start w-full">
 		<Nav/>
-		<div class="px-10 p-4">
-		
-		<section class="w-[80%] md:w-[35%] flex justify-start gap-8 md:gap-15 md:py-24 items-start flex-col py-10 text-white">
-			<h3 class="text-sm">What do we do?</h3>
-			<h1 class="text-3xl md:text-4xl font-medium">We design and develop marketing campaigns for small businesses and tradies<br> in Perth</h1>
-		</section>
+		<Marquee/>
+		<div class="m-auto gap-6 flex flex-col mx-4 items-start md:items-center">
+			<h1 class="text-4xl md:text-6xl md:text-center text-left font-serif">We Navigate Digital Landscapes</h1>
+			<h2 class="text-sm md:text-xl md:text-center text-left font-serif">We help home service companies all across Australia stand out against the competition,
+				unveiling their beauty with our soil-to-screen expertise.
+				</h2>
+				<div class="flex gap-4"><a class="px-4 py-2 bg-evergreen text-sm md:text-xl rounded-md text-background">Contact Us</a><a class="px-4 py-2 bg-cucumber text-sm md:text-xl rounded-md text-background">Learn More</a></div>
 		</div>
-		
-		
-		<img class="w-full max-h-[40vh] md:max-h-[53vh]  object-none object-center" src="/perth.webp" alt="Main Banner, Perth skyline">
-		
-		<div class="px-10 p-4 flex md:flex-row flex-col md:gap-20">
-		<section id="services" class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start flex-col py-5 text-white">
-			<h3 class="text-sm">01</h3>
-			<h1 class="text-3xl md:text-4xl font-medium">Web Design</h1>
-			<Carosuel/>
-		</section>
-		<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start md:items-end flex-col py-5 text-white">
-			<h3 class="text-sm hidden md:block">01</h3>
-			<h1 class="text-lg md:text-2xl font-light">In today's digital landscape, your website isn't just an online brochure; it's your brand's digital storefront, storyteller, and ultimate conversion machine. Yet, standing out in a sea of pixels requires more than just aesthetics. We believe in web design that's strategic, intentional, and interwoven with your brand's DNA. We craft experiences that not only capture attention with stunning visuals, but also guide your audience every step of the way, nurturing leads and transforming visits into lasting connections.</h1>
-			<h1 class="text-lg md:text-xl font-light">Ready to ditch the cookie-cutter templates and forge an online experience that's uniquely yours? Let's craft a digital masterpiece that speaks volumes about your brand and drives real results.</h1>
-			<a href="#contact" class="text-sm bg-white text-black p-2 px-4 rounded-full">Get Started</a>
-		</section>
+	</section>
+	<section id="portfolio" class="bg-background flex flex-col justify-start w-full">
+		<div class=" py-7 gap-6 flex flex-col mx-4 items-start">
+			<h3 class="text-5xl font-serif">Our Work</h3>
+			<p class="text-zeus">This is a bit barren, so that’s pretty embarrassing. We’re the new web design agency on the block, and while our team members have decades of experience, there aren’t many projects yet done under the Gorkle name.<br>Which is all the more reason to get your business down here! ;)</p>
+			<div class="flex flex-col md:grid grid-cols-4 grid-rows-2 w-full h-full gap-4"><img src="/seventrees.png"><img src="/magnal.png"><img src="/lawnscare.png"><img src="/lasalle.png"/><img src="/esgarden.png"></div>
 		</div>
-
-		
-
-		<div class="px-10 p-4 flex md:flex-row flex-col">
-			<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start flex-col py-5 text-white">
-				<h3 class="text-sm">02</h3>
-				<h1 class="text-3xl md:text-4xl font-medium">Social Media</h1>
-				<h1 class="text-lg md:text-2xl font-light">Feeling overwhelmed by the ever-shifting tides of Facebook, Instagram, and Twitter? Don't let algorithms and engagement rates drown your business. We're the lifeguards of the social media ocean, ready to dive in and craft a wave-worthy strategy that gets your brand noticed. We'll untangle hashtags, tame unruly comment sections, and turn fleeting trends into lasting connections.</h1>
-				<h1 class="text-lg md:text-3xl font-light">Social media is hard, so let us handle it. We use organic marketing to expose you to thousands of potential clients</h1>
-				<a href="#contact" class="text-sm bg-white text-black p-2 px-4 rounded-full">Get Started</a>
-			</section>
-			<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start md:items-end flex-col py-5 text-white">
-				<h3 class="text-sm hidden md:block">02</h3>
-				<img alt="Graphic of a bird" src="/bird.webp">
-				
-				
-				
-			</section>
+	</section>
+	<section id="about" class="bg-background flex flex-col justify-start w-full">
+		<div class=" py-7 gap-6 flex flex-col mx-4 items-start">
+			<h3 class="text-3xl font-serif md:text-5xl">Here's The Numbers:</h3>
+			<p class="text-lg font-sans md:text-2xl">After 6 months With Gorkle, Our Average Client Receives 270% Return On Investment.</p>
+			<p class="text-sm md:text-md font-sans">*this is calculated by the profit they recieve on jobs collected through gorkle's website.</p>
 		</div>
-
-			<section id="about" class="px-10 p-4 flex md:flex-row flex-col">
-				<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start flex-col py-5 text-white">
-					<h3 class="text-sm">About Us</h3>
-					<h1 class="text-3xl md:text-4xl font-medium">It's about you</h1>
-				</section>
-				<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start md:items-end flex-col py-5 text-white">
-					<h3 class="text-sm hidden md:block">About Us</h3>
-					<h1 class="text-lg md:text-3xl font-light">Founded recently, we aim to provide a high quality experience to business owners</h1>
-					<h1 class="text-sm md:text-3xl font-light">As a small business owner, it's common to be waved off and turned away by agencies offering high quality services. We aim to offer that professional service to smaller business for a reasonable price.</h1>
-				</section>
-			</section>
-			<section id="contact" class="px-10 p-4 flex md:flex-row flex-col">
-				<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start flex-col py-5 text-white">
-					<h3 class="text-sm">Contact Us</h3>
-					<h1 class="text-3xl md:text-4xl font-medium">So what are you waiting for?</h1>
-				</section>
-				<section class="md:w-[50%] flex justify-start gap-8 md:gap-20 md:py-24 items-start md:items-end flex-col py-5 text-white">
-					<h3 class="text-sm hidden md:block">Contact Us</h3>
-					<h1 class="text-lg md:text-3xl font-light">mark@gorkle.design</h1>
-					<h1 class="text-lg md:text-3xl font-light">+61 424 904 611</h1>
-				</section>
-			</section>
-		
-	</main>
+	</section>
+	<section class="bg-background flex flex-col justify-start w-full">
+		<div class=" py-7 gap-6 flex flex-col mx-4 items-start">
+			<h3 class="text-3xl font-serif md:text-5xl">How We Work:</h3>
+			<p class="text-lg font-sans md:text-2xl"><strong>You're the most important person in your business.</strong><br>Which, is why we won't spend 6 hours of your time on useless appointments and calls. (We couldn't afford to pay you by the hour!)</p>
+			<p class="text-sm md:text-md font-sans">We also won't make you read 1000 paragraphs on this website, so we'll end it here.</p>
+		</div>
+	</section>
+	<section id="contact" class="bg-background flex flex-col justify-center w-full">
+		<div class="border-t border-zeus py-7 gap-3 flex flex-col mx-4 items-start">
+			<h3 class="text-3xl font-serif md:text-5xl">Talk to us:</h3>
+			<p class="text-lg font-sans md:text-2xl">email: mark@gorkle.design</p>
+			<p class="text-lg font-sans md:text-2xl">phone: +61 8 6102 5655</p>
+			
+		</div>
+	</section>
 </Layout>

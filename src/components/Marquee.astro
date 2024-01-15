@@ -1,0 +1,21 @@
+<style>
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .marquee-container {
+      width: 100%; /* Adjust the width as needed */
+      overflow: hidden;
+    }
+
+    
+    .marquee {
+      white-space: nowrap;
+      display: inline-block; /* Allow the container to take the width of the content */
+      animation: marquee 20s linear infinite;
+    }
+  </style>
+  <div class="marquee-container w-full border-b border-zeus bg-background text-zeus px-4">
+    <div class="marquee w-full">300 DOLLARS OF STORE CREDIT UPON ANY SUCCESSFUL REFERRAL</div>
+  </div>
